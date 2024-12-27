@@ -7,6 +7,7 @@ def generate_password(n):
   assert n >= 4, "La longitud de la contraseña debe ser al menos 4"
   
   password = []
+  # random.choice -> Escoge un elemento aleatorio de la lista
   password.append(random.choice(string.ascii_uppercase))
   password.append(random.choice(string.ascii_lowercase))
   password.append(random.choice(string.digits))
